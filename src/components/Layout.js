@@ -1,6 +1,7 @@
 
 import React from 'react'
 import { useLocation } from 'react-router-dom'
+import Footer from './Footer'
 
 import Navbar from './Navbar'
 
@@ -14,7 +15,8 @@ export default function Layout({ children }) {
             <div className='px-10'>
                 {children}
             </div>
-
+            {/* footer */}
+            {/* <Footer /> */}
         </div>
     )
 }

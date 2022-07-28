@@ -31,10 +31,6 @@ export default function About() {
             name: 'Typescript',
             link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg'
         },
-        // {
-        //     name: 'Ruby on Rails',
-        //     link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg'
-        // },
         {
             name: 'Python',
             link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg'
@@ -44,8 +40,8 @@ export default function About() {
             link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg'
         },
         {
-            name: 'Jupyter',
-            link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg'
+            name: 'Django',
+            link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg'
         },
         
         {
@@ -68,28 +64,31 @@ export default function About() {
             name: 'MS SQL Server',
             link: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg'
         },
-        
     ]
+    const message = {
+        name: 'Carlos Joco Gumanay',
+        role_current: 'Data Automation Engineer',
+        role_start_date: 'July 2021',
+        role_description: 'I mostly work with Power BI for data visualization, Python for extracting / cleaning data, Excel VBA to generate charts used for reports.',
+        current_happenings: 'Currently, I am attending a bootcamp to learn web development. For front-end we are learning React JS, and for backend we are learning Ruby On Rails',
+        message: "I have been self-learning since 2018 about programming and I learned Python as my first language. I am using Python mostly for it's data-related tasks. Through self-learning, I was able to use Flask and Django to make web apps. I want to shift my career to web development, and I am open to positions where I can apply these skills."
+    }
 
     return (
         <Layout>
             <div className='grid grid-cols-2 h-full mt-5 mx-5 gap-5'>
                 <div className='leading-loose'>
-                    <h1>I am Carlos Joco Gumanay.</h1>
+                    
+                    <h1>I am {message.name}.</h1>
                     <br />
-                    <h1>I am a Data Automation Engineer since July 2021.</h1>
-                    <p>I mostly work with Power BI for data visualization, Python for extracting, and cleaning data, Excel VBA to generate charts used for reports.</p>
+                    <h1>I am a {message.role_current} since {message.role_start_date}.</h1>
+                    <p>{message.role_description}</p>
                     <br />
-                    <p>Currently, I am attending a bootcamp to learn web development.</p>
-                    <p>For front-end I am learning React JS and for backend I am learning Ruby On Rails</p>
-                    <p></p>
+                    <p>{message.current_happenings}</p>
                     <br />
-                    <p>I have been self-learning since 2018 about programming and I learned Python as my first language.</p>
-                    <p>I am using Python mostly for it's data-related tasks.</p>
-                    <p>Through self-learning, I was able to use Python for web development using the Flask framework.</p>
-                    <p>I lean more towards web development, and I am open to positions that I can apply these skills.</p>
+                    <p>{message.message}</p>
                 </div>
-                <div className='flex flex-col justify-center items-center gap-5 bg-zinc-900/20 rounded '>
+                <div className='flex flex-col justify-center items-center gap-5 bg-zinc-900/20 rounded-3xl '>
                     <h1 className='text-3xl mt-10'>Tech Experience</h1>
                     <div className='flex justify-center items-center flex-wrap gap-5 mb-10'>
                         {
@@ -100,8 +99,6 @@ export default function About() {
                                 </div>
                             ))
                         }
-
-
                     </div>
                 </div>
 

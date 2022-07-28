@@ -40,7 +40,7 @@ export default function Navbar() {
                 {
                     menuItems.map((item) => (
                         <div className={`flex justify-center items-center text-white text-semibold ${location.pathname === item.path ? "underline" : "" } underline-offset-8 decoration-2`} key={item.title}>
-                            {/* {item.icon} */}
+                            {/* {location.pathname === item.path ? item.icon : "" } */}
                             <Link to={`${item.path}`} className="px-5">
                                 {item.title}
                             </Link>
